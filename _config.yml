@@ -17,5 +17,5 @@ kramdown:
 
 exclude:
   - "README.md"
-  - "devbuild.bat"
-  - "devserve.bat"
+  - "serve.bat"
+  - "build.bat"
