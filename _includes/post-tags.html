@@ -1,0 +1,12 @@
+<div class="tags-cloud">
+    <i class="fa fa-tags"></i>
+    {% if post %}
+        {% assign tags = post.tags %}
+    {% else %}
+        {% assign tags = page.tags %}
+    {% endif %}
+
+    {% for tag in tags %}
+        <a href="/tags/#{{tag|slugize}}">{{tag}}</a>
+    {% endfor %}
+</div>

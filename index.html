@@ -1,23 +1,97 @@
 ---
-layout: default
+layout: main
 ---
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+    {% if site.posts.size > 0 %}
+    <div class="row">
+        <div class="col-xs-9">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <ul class="post-list">
+                {% for post in site.posts %}
+                <li>
+                    <span class="post-meta">
+                        <i class="fa fa-calendar fa-right"></i>
+                        Posted on {{ post.date | date: "%B %-d, %Y" }}
+                    </span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+                    <h1 class="post-title">
+                        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </h1>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+                    <div class="post-content">
+                        {{ post.excerpt }}
+                        <!--{{ post.content | strip_html | truncatewords: 50 }}-->
+                    </div>
+                    {% include post-tags.html %}
+                </li>
+                {% unless forloop.last %}<hr class="spacer" >{% endunless %}
+
+                {% endfor %}
+            </ul>
+
+        </div>
+        <div class="col-xs-3">
+            <aside class="right-menu">
+                <h1>Recent posts</h1>
+                <div class="widget">
+                    <ul>
+                        {% for post in site.posts %}
+                            {% if forloop.index > 5 %}
+                                {% break %}
+                            {% endif %}
+                            <li>
+                                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </aside>
+            <aside class="right-menu">
+                <h1>Archives</h1>
+                <div class="widget">
+
+                <ul>
+                {% for post in site.posts %}
+                {% capture month %}{{ post.date | date: '%m%Y' }}{% endcapture %}
+                {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
+                    {% if month != nmonth %}
+                    <li>
+                        <a href="/archives/#{{month}}" >{{ post.date | date: '%B %Y' }}</a>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+                </ul>
+                </div>
+            </aside>
+            <aside class="right-menu">
+                <h1>Categories</h1>
+                <div class="widget">
+                    <ul>
+                        {% for category in site.categories %}
+                            <li>
+                                <a href="/categories/#{{ category | first | slugize }}">{{category | first}}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </aside>
+            <aside class="right-menu">
+                <h1>Tags</h1>
+                <div class="tags-cloud">
+                    {% for tag in site.tags %}
+                        <a href="/tags/#{{ tag | first | slugize }}">{{tag | first}}</a>&nbsp;
+                    {% endfor %}
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    {% else %}
+        <script>
+            window.location.href = '/about';
+        </script>
+    {% endif %}
 
 </div>

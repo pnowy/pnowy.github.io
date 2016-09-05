@@ -1,0 +1,96 @@
+// General Bootstrap variables
+$font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size-base: 16px;
+$link-hover-color: #57a3e8;
+$link-hover-decoration: none;
+$btn-default-bg: rgba(255, 255, 255, 0.08);
+$spacing-unit:     30px;
+
+$small-font-size:  $font-size-base * 0.875;
+$base-line-height: 1.5;
+
+/*----------------------
+       HEADER
+-----------------------*/
+$site-name-font-size: 3*$font-size-base;
+$site-description-font-size: 22px;
+$site-description-font-family: 'Titillium Web', sans-serif;
+$header-background:   #303538;
+$header-text-color: whitesmoke;
+$header-navigation-font-size: 14px;
+/*----------------------
+       SITE CONTENT
+-----------------------*/
+$post-title-color: #2E2E2E;
+$post-title-font-family: 'Open Sans',sans-serif;
+$post-content-font-family: "Merriweather", serif;
+$post-content-line-height: 28px;
+$post-content-font-color: #3A4145;
+$post-content-font-weight: 300;
+$content-wrapper-max-width: 1024px;
+/*----------------------
+       FOOTER
+-----------------------*/
+/*----------------------
+       FOOTER
+-----------------------*/
+$footer-height: 68px;
+$footer-text-color: #64b2df;
+$footer-background: 50% 50% repeat url("../assets/images/footer_bg.png");
+$footer-bottom-panel-font-color: #808080;
+$footer-bottom-panel-background: #222222;
+$footer-bottom-panel-padding: 20px 0;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+//$page-max-content-width:    915px;
+$content-width:    800px;
+
+/*----------------------
+ MEDIA QUERIES / DOLNE ROZMIARY URZĄDZEŃ / LOW DEVICE SIZES
+-----------------------*/
+$desktop:      1200px; /* Large Devices, Wide Screens */
+$laptop:       992px;  /* Medium Devices, Desktops */
+$tablet:       768px;  /* Small Devices, Tablets */
+$phone:        480px;  /* Extra Small Devices, Phones */
+
+/*
+ Przy korzystaniu z punktów przełamania o dolnych wartościach urządzeń (tj. $tablet zaczyna się od 768px a kończy na 991px)
+ min-width daje nam z automatu wyrażenie większe-lub-równe: $tablet ale w przeciwnym wypadku (tj. korzystając z max-width)
+ daje nam z automatu wyrażenie mniejsze-niż: $tablet (bo jest to ograniczenie dolne tabletu, inaczej mówiąc górne ograniczenie telefonu).
+
+ Min-Width: Refers to everything greater than or equal to the amount given. (Mobile first approach)
+ Max-Width: Refers to everything less than or equal to the amount given. (Desktop first approach)
+*/
+
+// Use media queries like this:
+// @include larger-equal-than($tablet) {}
+@mixin larger-equal-than($device) {
+  @media screen and (min-width: ($device)) {
+    @content;
+  }
+}
+
+// because max-width and min-width use greater or equal approach we have to decrease the size in order to correctly display on the size
+// which is equal to the size of cross point (i.e. 768 for tablet)
+@mixin smaller-than($device) {
+  @media screen and (max-width: ($device - 1)) {
+    @content;
+  }
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}

@@ -1,0 +1,87 @@
+/*----------------------
+       HTML & BODY
+-----------------------*/
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+/** LINKS */
+a {
+  color: $brand-color;
+  text-decoration: none;
+
+  &:visited {
+    color: darken($brand-color, 15%);
+  }
+
+  &:hover {
+    color: $link-hover-color;
+    transition: color ease .3s;
+    text-decoration: $link-hover-decoration;
+  }
+
+  &:visited:hover {
+    color: $link-hover-color;
+    transition: color ease .3s;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+/**
+    Vertical align of the row from bootstrap done by flex
+    http://stackoverflow.com/questions/20547819/vertical-align-with-bootstrap-3
+ */
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
+/** Blockquotes */
+blockquote {
+  color: $grey-color;
+  border-left: 4px solid $grey-color-light;
+  padding-left: $spacing-unit / 2;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+hr {
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
+  border: 0;
+}
+
+/** Code formatting */
+pre,
+code {
+  font-size: 15px;
+  border: 1px solid $grey-color-light;
+  border-radius: 3px;
+}
+
+code {
+  padding: 1px 5px;
+}
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto;
+
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

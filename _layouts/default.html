@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <div id="wrapper" class="toggled">
+
+      {% include header.html %}
+
+      <div id="page-content-wrapper">
+        {{ content }}
+      </div>
+
+    </div>
+
+    {% include footer.html %}
+
+    {% if site.environment == 'prod' %}
+      {% include analytics.html %}
+    {% endif %}
+  </body>
+
+</html>

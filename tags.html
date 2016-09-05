@@ -1,0 +1,26 @@
+---
+layout: page
+permalink: /tags/
+---
+<h1>Tags</h1>
+<div class="tags-cloud">
+    {% for tag in site.tags %}
+        <i class="fa fa-tags"></i>
+        <a href="#{{ tag | first | slugize }}">{{ tag | first }} </a>
+        <br/>
+    {% endfor %}
+</div>
+
+
+<div>
+    {% for tag in site.tags %}
+        {% capture tag_name %}{{ tag | first }}{% endcapture %}
+        <h3>{{ tag_name }}</h3>
+        <a name="{{ tag_name | slugize }}"></a>
+        <ul>
+        {% for post in site.tags[tag_name] %}
+            <li><a href="{{ root_url }}{{ post.url }}">{{post.title}}</a></li>
+        {% endfor %}
+        </ul>
+    {% endfor %}
+</div>

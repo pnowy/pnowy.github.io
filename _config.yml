@@ -24,5 +24,3 @@ exclude:
   - "README.md"
   - "devbuild.bat"
   - "devserve.bat"
-
-theme: minima
