@@ -16,11 +16,6 @@ kramdown:
    input: GFM
 
 exclude:
-  - "bower_components"
-  - "bower.json"
-  - "node_modules"
-  - "package.json"
-  - "Gruntfile.coffee"
   - "README.md"
   - "devbuild.bat"
   - "devserve.bat"
