@@ -1,0 +1,1 @@
+jekyll.bat build --config=_config.yml,_config_dev.yml --drafts
