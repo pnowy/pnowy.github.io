@@ -27,7 +27,7 @@ Though Spek is written in Kotlin is 100% compatible with Java. The specification
 In simple words it is a test in a more human readable way. If someone used the Spock, Jasmine or Mocha then won't have a problem to understand
 the Spek. Let's take a look at simple example: 
 
-```java
+```kotlin
 class CalculatorSpec: Spek({
     given("simple calculator") {
         val calculator = Calculator()
