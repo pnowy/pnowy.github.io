@@ -1,0 +1,6 @@
+# User-specific stuff:
+.idea/
+.sass-cache/
+bower_components/
+node_modules/
+_site/
