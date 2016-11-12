@@ -17,4 +17,8 @@ layout: default
 
   {% include post-tags.html %}
 
+  {% if page.comments %}
+    {% include disqus.html %}
+  {% endif %}
+
 </article>
