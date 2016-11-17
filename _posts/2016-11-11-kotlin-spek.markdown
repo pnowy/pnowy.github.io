@@ -2,6 +2,7 @@
 layout: post
 comments: true
 title:  "Spek - specification test framework for Kotlin"
+description: "Description how to use the Spek - specification test framework for Kotlin"
 date:   2016-11-11
 categories: Kotlin
 tags: java gradle spek kotlin

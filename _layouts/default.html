@@ -17,7 +17,7 @@
 
     {% include footer.html %}
 
-    {% if site.environment == 'prod' %}
+    {% if site.JEKYLL_ENV == 'production' %}
       {% include analytics.html %}
     {% endif %}
   </body>
