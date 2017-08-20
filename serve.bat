@@ -1,1 +1,1 @@
-jekyll.bat serve --config=_config.yml,_config_dev.yml --drafts
+bundle exec jekyll serve --config=_config.yml,_config_dev.yml --drafts
