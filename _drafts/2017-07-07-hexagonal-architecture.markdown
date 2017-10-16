@@ -23,6 +23,7 @@ The hexagonal architecture has three key elements:
 
 Links with examples:
 - https://github.com/moifort/play-with-hexagonal-architecture
+- https://github.com/fabricioepa/lab-hexagon-java
 
 
 
