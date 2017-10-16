@@ -21,7 +21,8 @@ The hexagonal architecture has three key elements:
 - second element
 
 
-
+Links with examples:
+- https://github.com/moifort/play-with-hexagonal-architecture
 
 
 
