@@ -1,15 +1,15 @@
 ### BUILD FOR DEV WITH DRAFTS
 
-`jekyll.bat build --config=_config.yml,_config_dev.yml --drafts`
+`bundle exec jekyll build --config=_config.yml,_config_dev.yml --drafts`
 
 or
 
-`build.bat`
+`./build.sh`
 
 ### SERVE FOR DEV WITH DRAFTS
 
-`jekyll.bat build --config=_config.yml,_config_dev.yml --drafts`
+`bundle exec jekyll build --config=_config.yml,_config_dev.yml --drafts`
 
 or
 
-`serve.bat`
+`./serve.sh`

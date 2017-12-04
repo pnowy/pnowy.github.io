@@ -17,8 +17,8 @@ kramdown:
 
 exclude:
   - "README.md"
-  - "serve.bat"
-  - "build.bat"
+  - "serve.sh"
+  - "build.sh"
 
 gems:
   - jekyll-seo-tag
