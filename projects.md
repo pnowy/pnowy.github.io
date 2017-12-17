@@ -13,9 +13,9 @@ Ultra lightweight library to generate dynamic SQL based on hibernate session
 -------------
 
 <div class="center">
-<a href="https://github.com/pnowy/SvnPath" target="_blank">SvnPath</a>
+<a href="https://www.softwareclazz.com" target="_blank">softwareClazz</a>
 <br/>
-IntelliJ Idea Plugin which allows copy SVN URL path
+Online platform to learn programming.
 </div>
 
 -------------
