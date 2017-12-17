@@ -5,6 +5,10 @@
 
   {% seo %}
 
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="{{ "/assets/highlightjs-line-numbers/highlightjs-line-numbers.js" | prepend: site.baseurl }}"></script>
+
   <link rel="stylesheet" href="{{ "/assets/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
@@ -15,11 +19,15 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
   <script type="text/javascript" >
-    $(document).ready(function () {
-      $(".menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
+      $(document).ready(function () {
+          hljs.initHighlightingOnLoad();
+          hljs.initLineNumbersOnLoad({
+              singleLine: false
+          });
+          $(".menu-toggle").click(function (e) {
+              e.preventDefault();
+              $("#wrapper").toggleClass("toggled");
+          });
       });
-    });
   </script>
 </head>

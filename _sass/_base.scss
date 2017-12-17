@@ -69,14 +69,15 @@ code {
   font-size: $code-font-size;
   border: 1px solid $grey-color-light;
   border-radius: 3px;
+  background-color: white;
 }
 
 code {
-  padding: 1px 5px;
+  padding: 0;
 }
 
 pre {
-  padding: 8px 12px;
+  padding: 0;
   overflow-x: auto;
 
   > code {
@@ -84,4 +85,27 @@ pre {
     padding-right: 0;
     padding-left: 0;
   }
+}
+
+/* for block of numbers */
+td.hljs-ln-numbers {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  text-align: center;
+  color: #ccc;
+  border-right: 1px solid #CCC;
+  vertical-align: top;
+  padding-right: 5px;
+
+  /* your custom style here */
+}
+
+/* for block of code */
+td.hljs-ln-code {
+  padding-left: 10px;
 }

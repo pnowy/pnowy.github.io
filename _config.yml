@@ -15,13 +15,8 @@ linkedin_profile: https://www.linkedin.com/in/przemeknowak
 kramdown:
    input: GFM
    syntax_highlighter_opts:
-       css_class: 'highlight'
-       line_numbers: true # bad idea, spans don't need linenos and would inherit this option
-       span:
-         line_numbers: false
-       block:
-         line_numbers: true
-         start_line: 1
+       disable: none
+
 
 exclude:
   - "README.md"
