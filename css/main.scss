@@ -19,3 +19,7 @@ $icon-font-path: "../assets/bootstrap/fonts/";
   "sidebar",
   "syntax-highlighting"
 ;
+
+img {
+  @extend .img-responsive;
+}

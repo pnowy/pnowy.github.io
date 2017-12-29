@@ -67,24 +67,12 @@ hr {
 pre,
 code {
   font-size: $code-font-size;
-  border: 1px solid $grey-color-light;
   border-radius: 3px;
-  background-color: white;
+  background-color: #F0F0F0;
 }
 
 code {
   padding: 0;
-}
-
-pre {
-  padding: 0;
-  overflow-x: auto;
-
-  > code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0;
-  }
 }
 
 /* for block of numbers */
