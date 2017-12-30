@@ -3,7 +3,7 @@ layout: post
 comments: true
 title:  "AWS Elastic Beanstalk docker application deployment and CI/CD Gitlab configuration"
 description: "AWS Elastic Beanstalk docker application deployment and CI/CD Gitlab configuration"
-date:   2017-12-04
+date:   2017-12-30
 categories: DevOps
 tags: aws docker gitlab ci cd
 ---
