@@ -211,7 +211,7 @@ more environments to mange it would be better to use console.
 
 Ok - so in this moment our application should automatically build and deploy to EB environment(s). The good idea it would be to connect with the 
 environment the custom domain instead of default AWS domain name. This operation is very easy even if you don't have domain on the AWS but on the
-external domain provider (for domains registered directly on AWS it's event easier - you will find everything on [documentation](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/customdomains.html).
+external domain provider (for domains registered directly on AWS it's event easier - you will find everything on [documentation](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/customdomains.html)).
 
 To connect with custom domain you have to:
 1. Login to you domain provider.
