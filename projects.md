@@ -5,25 +5,9 @@ permalink: /projects/
 ---
 
 <div class="center">
-<a href="http://pnowy.github.io/NativeCriteria/" target="_blank">NativeCriteria</a>
+<a href="https://pnowy.gitbooks.io/nativecriteria/content/" target="_blank">NativeCriteria</a>
 <br/>
 Ultra lightweight library to generate dynamic SQL based on hibernate session
-</div>
-
--------------
-
-<div class="center">
-<a href="https://www.softwareclazz.com" target="_blank">softwareClazz</a>
-<br/>
-Online platform to learn programming.
-</div>
-
--------------
-
-<div class="center">
-<a href="https://workoutlogapp.firebaseapp.com/" target="_blank">WorkoutLog</a>
-<br/>
-Application for daily workout logging. Build based on firebase service.
 </div>
 
 -------------
