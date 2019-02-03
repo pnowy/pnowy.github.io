@@ -23,6 +23,6 @@ exclude:
   - "serve.sh"
   - "build.sh"
 
-gems:
+plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
