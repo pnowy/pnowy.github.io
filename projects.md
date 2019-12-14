@@ -5,7 +5,7 @@ permalink: /projects/
 ---
 
 <div class="center">
-<a href="https://pnowy.gitbooks.io/nativecriteria/content/" target="_blank">NativeCriteria</a>
+<a href="https://nativecriteria.przemeknowak.com" target="_blank">NativeCriteria</a>
 <br/>
 Ultra lightweight library to generate dynamic SQL based on hibernate session
 </div>
