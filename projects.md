@@ -5,7 +5,7 @@ permalink: /projects/
 ---
 
 <div class="center">
-<a href="https://nativecriteria.przemeknowak.com" target="_blank">NativeCriteria</a>
+<a href="http://nativecriteria.przemeknowak.com" target="_blank">NativeCriteria</a>
 <br/>
 Ultra lightweight library to generate dynamic SQL based on hibernate session
 </div>
@@ -13,7 +13,7 @@ Ultra lightweight library to generate dynamic SQL based on hibernate session
 -------------
 
 <div class="center">
-<a href="http://stars.przemeknowak.com" target="_blank">Github Stars History</a>
+<a href="https://stars.przemeknowak.com" target="_blank">Github Stars History</a>
 <br/>
 The missing Github Stars History!
 </div>
